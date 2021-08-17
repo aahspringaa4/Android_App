@@ -21,11 +21,9 @@ public class PlayActivity extends AppCompatActivity {
     private ImageButton ib_back;
     private ImageButton ib_continue;
 
-    private String[] 발라드 = {"https://www.youtube.com/embed/Hi0skksGeRk",
-            "https://www.youtube.com/embed/kB5g7ceKejw",
-            "https://www.youtube.com/embed/jy_UiIQn_d0",
-            "https://www.youtube.com/embed/vtdR75lwy9s",
-            "https://www.youtube.com/embed/VgbIDfPJIFs"};
+    private String[] 발라드 = {
+            "https://www.youtube.com/watch?v=o4n96GSPj1A"
+    };
     private String[] 댄스팝 = {"https://www.youtube.com/embed/CuklIb9d3fI",
             "https://www.youtube.com/embed/RmuL-BPFi2Q",
             "https://www.youtube.com/embed/GWNODbG9AIM",
