@@ -21,29 +21,11 @@ public class PlayActivity extends AppCompatActivity {
     private ImageButton ib_back;
     private ImageButton ib_continue;
 
-    private String[] 발라드 = {
-            "https://www.youtube.com/watch?v=o4n96GSPj1A"
-    };
-    private String[] 댄스팝 = {"https://www.youtube.com/embed/CuklIb9d3fI",
-            "https://www.youtube.com/embed/RmuL-BPFi2Q",
-            "https://www.youtube.com/embed/GWNODbG9AIM",
-            "https://www.youtube.com/embed/WMweEpGlu_U",
-            "https://www.youtube.com/embed/4TWR90KJl84"};
-    private String[] 트로트 = {"https://www.youtube.com/embed/5zONW_hyI5A",
-            "https://www.youtube.com/embed/5MS-GpklkHs",
-            "https://www.youtube.com/embed/GNcwNAT6fro",
-            "https://www.youtube.com/embed/o71z6nDktEI",
-            "https://www.youtube.com/embed/7Uu_K0R3yuY"};
-    private String[] 힙합 = {"https://www.youtube.com/embed/0CS8qFgFHxU",
-            "https://www.youtube.com/embed/MiYgR25ur8k",
-            "https://www.youtube.com/embed/FKlr_LXnKmU",
-            "https://www.youtube.com/embed/QPUjV7epJqE",
-            "https://www.youtube.com/embed/N6ElB8ysTXM"};
-    private String[] 락메탈 = {"https://www.youtube.com/embed/N2p-LRBNc",
-            "https://www.youtube.com/embed/K6sH0r_NwUo",
-            "https://www.youtube.com/embed/CKZvWhCqx1s",
-            "https://www.youtube.com/embed/tqyrl2V1kTM",
-            "https://www.youtube.com/embed/GVRUPRSFnQI&t=126s"};
+    private String[] 발라드 = {"https://www.youtube.com/watch?v=o4n96GSPj1A"};
+    private String[] 댄스팝 = {"https://www.youtube.com/watch?v=TxI8gEgACEU"};
+    private String[] 트로트 = {"https://www.youtube.com/watch?v=Bwump6p5Uwc"};
+    private String[] 힙합 = {"https://www.youtube.com/watch?v=qU0IcDr9aaY"};
+    private String[] OST = {"https://www.youtube.com/watch?v=J0UUPaREffw"};
 
 
     @Override
@@ -63,7 +45,7 @@ public class PlayActivity extends AppCompatActivity {
         } else if(Objects.equals(MainActivity.select, "랩/힙합")) {
             webView.loadUrl(힙합[random.nextInt(힙합.length+1)]);
         } else if(Objects.equals(MainActivity.select, "락/메탈")) {
-            webView.loadUrl(락메탈[random.nextInt(락메탈.length+1)]);
+            webView.loadUrl(OST[random.nextInt(OST.length+1)]);
         }
 
         webView.setWebChromeClient(new WebChromeClient());
@@ -92,7 +74,7 @@ public class PlayActivity extends AppCompatActivity {
                 } else if(Objects.equals(MainActivity.select, "랩/힙합")) {
                     webView.loadUrl(힙합[random.nextInt(힙합.length+1)]);
                 } else if(Objects.equals(MainActivity.select, "락/메탈")) {
-                    webView.loadUrl(락메탈[random.nextInt(락메탈.length+1)]);
+                    webView.loadUrl(OST[random.nextInt(OST.length+1)]);
                 }
             }
         });
