@@ -36,7 +36,7 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 ---
 1. Spinner : 장르를 선택 할때 사용함
 
-2. WebView : 장르 선택 이후 장르에 맞는 유튜브로 넘어감 ()
+2. WebView : 장르 선택 이후 장르에 맞는 유튜브로 넘어감
 
 # DMSMealReviewApp
 
