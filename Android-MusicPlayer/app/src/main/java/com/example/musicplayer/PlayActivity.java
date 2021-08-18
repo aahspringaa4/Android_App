@@ -44,7 +44,7 @@ public class PlayActivity extends AppCompatActivity {
             webView.loadUrl(트로트[random.nextInt(트로트.length+1)]);
         } else if(Objects.equals(MainActivity.select, "랩/힙합")) {
             webView.loadUrl(힙합[random.nextInt(힙합.length+1)]);
-        } else if(Objects.equals(MainActivity.select, "락/메탈")) {
+        } else if(Objects.equals(MainActivity.select, "OST")) {
             webView.loadUrl(OST[random.nextInt(OST.length+1)]);
         }
 
@@ -74,7 +74,7 @@ public class PlayActivity extends AppCompatActivity {
                 } else if(Objects.equals(MainActivity.select, "랩/힙합")) {
                     webView.loadUrl(힙합[random.nextInt(힙합.length+1)]);
                 } else if(Objects.equals(MainActivity.select, "OST")) {
-                    webView.loadUrl(OST[random.nextInt(OST.length+1)]);                 
+                    webView.loadUrl(OST[random.nextInt(OST.length+1)]);
                 }
             }
         });
