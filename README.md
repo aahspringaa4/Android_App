@@ -54,7 +54,7 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 
 2. setBackGroundResource : 설문 조사의 값을 가져올떄 사용합니다.
 
-# Facebook
+# Facebook 따라잡기
 
 전공 동아리 DMS에서 팀프로젝트로 만든 SNS 앱입니다.
 
