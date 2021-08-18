@@ -97,3 +97,15 @@ Fragment를 이용하여 전공 동아리 DMS 1학년을 소개합니다.
 ### Library
 ---
 1. Fragment : 하나의 Activity에서 조합하여 여러가지의 UI를 만들 수 있다.
+
+# WebView Example
+
+WebView를 이용하여 네이버 웨일과 연결 하였습니다.
+
+### Information
+---
+1. 앱에 들어가면 네이버 웨일을 사용 할 수 있습니다.
+
+### Library
+---
+1. WebView : 앱을 실행 시켰을때 설정해둔 네이버 웨일 URL로 넘어 갑니다.
