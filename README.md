@@ -1,4 +1,4 @@
-Android_App
+# Android_App
 
 # Android Studio로 개발한 앱을 올립니다. 
 
@@ -85,3 +85,15 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 1. Retrofit2 : Get, Post를 사용하여 서버와 통신 합니다,
 
 2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다.
+
+# Fragment Practice
+
+Fragment를 이용하여 전공 동아리 DMS 1학년을 소개합니다.
+
+#### Information
+---
+1. DMS의 1학년을 볼 수 있습니다.
+
+#### Library
+---
+1. Fragment : 하나의 Activity에서 조합하여 여러가지의 UI를 만들 수 있다.
