@@ -14,22 +14,13 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 
 2. 업체를 방문한 소비자는 방역 평점을 매길 수 있으며, 이로 인해 방역 체계는 더 탄탄해집니다.
 
-3. 1315 임세현과 함께 대덕 소프트웨어 마이스터고등학교 팀프로젝트로 제출 하였습니다.
-#### Key Point 
----
-1.방역 리뷰 조회로 안전한 업체 찾기
-
-2. '방역 표준 가이드' 에 따른 방역 리뷰 참여
-
-3. (예정) google map을 이용한 안전한 업체 찾기
-
 #### Libraries
 ---
-1. Retrofit : HTTP API를 Java 인터페이스로 변환함
+1. Retrofit : HTTP API를 Java 인터페이스로 변환합니다
 
-2. Gson : Json의 자바 오브젝트의 직력화, 역직렬화를 해줌
+2. Gson : Json의 자바 오브젝트의 직력화, 역직렬화를 해줍니다.
 
-3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시함
+3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다
 
 # MusicPlayer
 
@@ -42,7 +33,41 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 1. 앱을 사용하는 유저는 원하는 장르에 맞는 곡을 들을 수 있습니다.
 
 #### Libraries 
+---
 1. Spinner : 장르를 선택 할때 사용함
 
 2. WebView : 장르 선택 이후 장르에 맞는 유튜브로 넘어감 ()
 
+# DMSMealReviewApp
+
+대덕소프트웨어마이스터고등학교의 급식을 평가 할수 있는 앱입니다.
+
+#### Information
+---
+1. 앱 안에서는 영양사 선생님께 글을 적는 란이 있습니다.
+
+2. 급식을 설문 할 수 있습니다.
+
+#### Libraries 
+---
+1. Radio Group, Radio Button : 설문 조사를 할때 사용합니다.
+
+2. setBackGroundResource : 설문 조사의 값을 가져올떄 사용합니다.
+
+# Facebook
+
+전공 동아리 DMS에서 팀프로젝트로 만든 SNS 앱입니다.
+
+#### Information
+---
+1. 게시글을 올릴 수 있고 수정과 삭제가 가능합니다.
+
+2. 다른 사람의 게시물을 볼 수 있습니다.
+
+#### Libraries 
+---
+1. Retrofit2 : Get, Post, Patch, Delete를 사용하여 서버와 통신 합니다.
+
+2. Gson : Json의 자바 오브젝트의 직력화, 역직렬화를 해줍니다.
+
+3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다.
