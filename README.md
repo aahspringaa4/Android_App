@@ -72,6 +72,29 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 
 3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다.
 
+# Note
+
+심심해서 만든 노트입니다.
+
+### Information
+---
+1. 글을 입력 할 수 있습니다.
+2. 보낸 글을 스크롤 하여 볼 수 있습니다.
+
+### Library
+---
+1. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다.
+
+# NumberPad Caculator
+
+실생활에서 쉽게 사용 할 수 있는 계산기입니다.
+
+### Information
+---
+1. 숫자 패드로 두 개의 Edittext에 값을 입력 할 수 있습니다.
+
+2. 값 두개를 입력하고 밑에 연산 버튼을 누르면 값이 밑 TextView에 뜹니다.
+
 # Fragment Practice
 
 Fragment를 이용하여 전공 동아리 DMS 1학년을 소개합니다.
