@@ -1,6 +1,6 @@
 # Android_App
 
-## Android Studio로 개발한 앱을 올립니다. 
+## Android Studio로 개발한 앱을 올립니다.
 
 # AhnSimSteak (Safety Stay + Korea)
 
