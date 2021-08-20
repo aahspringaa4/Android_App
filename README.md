@@ -72,20 +72,6 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 
 3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다.
 
-# Meal Project
-
-전공 동아리 DMS에서 안드로이드 서버 연동 연습을 위해 만든 앱입니다.
-
-### Information
----
-1. 날짜를 입력하면 해당 날짜의 급식이 나옵니다.(아침 점심 저녁)
-
-### Libraries
----
-1. Retrofit2 : Get, Post를 사용하여 서버와 통신 합니다,
-
-2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다.
-
 # Fragment Practice
 
 Fragment를 이용하여 전공 동아리 DMS 1학년을 소개합니다.
