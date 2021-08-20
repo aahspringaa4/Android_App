@@ -16,11 +16,11 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 
 ### Libraries
 ---
-1. Retrofit : HTTP API를 Java 인터페이스로 변환합니다
+1. Retrofit : HTTP API를 Java 인터페이스로 변환합니다 (Google 지도 Api)
 
-2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다.
+2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다. 
 
-3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다
+3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다 (식당 표시)
 
 # MusicPlayer
 
