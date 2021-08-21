@@ -16,11 +16,11 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 
 ### Libraries
 ---
-1. Retrofit : HTTP API를 Java 인터페이스로 변환합니다
+1. Retrofit : HTTP API를 Java 인터페이스로 변환합니다 (Google 지도 Api)
 
-2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다.
+2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다. 
 
-3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다
+3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다 (식당 표시)
 
 # MusicPlayer
 
@@ -71,6 +71,29 @@ Hello New World() 헤커톤에서 주관하는 대회에서 만든 프로젝트 
 2. Gson : Json의 자바 오브젝트의 직렬화, 역직렬화를 해줍니다.
 
 3. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다.
+
+# Note
+
+심심해서 만든 노트입니다.
+
+### Information
+---
+1. 글을 입력 할 수 있습니다.
+2. 보낸 글을 스크롤 하여 볼 수 있습니다.
+
+### Library
+---
+1. RecyclerView : 메모리 사용량을 최소화하면서 UI에 많은 양의 데이터를 표시합니다.
+
+# NumberPad Caculator
+
+실생활에서 쉽게 사용 할 수 있는 계산기입니다.
+
+### Information
+---
+1. 숫자 패드로 두 개의 Edittext에 값을 입력 할 수 있습니다.
+
+2. 값 두개를 입력하고 밑에 연산 버튼을 누르면 값이 밑 TextView에 뜹니다.
 
 # Fragment Practice
 
