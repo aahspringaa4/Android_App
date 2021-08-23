@@ -27,37 +27,34 @@
             android:id="@+id/pocket"
             android:layout_width="165dp"
             android:layout_height="42dp"
-            android:hint="용돈 추가"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/edittext"
+            android:hint="용돈 추가"
             android:padding="10dp"
-            android:textSize="15dp">
-        </EditText>
+            android:textSize="15dp"></EditText>
 
         <EditText
             android:id="@+id/money"
             android:layout_width="165dp"
             android:layout_height="42dp"
-            android:hint="잔액"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="16dp"
-            android:textSize="15dp"
+            android:background="@drawable/edittext"
+            android:hint="잔액"
             android:padding="10dp"
-            android:background="@drawable/edittext">
-        </EditText>
+            android:textSize="15dp"></EditText>
 
         <EditText
             android:id="@+id/save"
             android:layout_width="165dp"
             android:layout_height="42dp"
-            android:hint="저축"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="10dp"
-            android:textSize="15dp"
+            android:background="@drawable/edittext"
+            android:hint="저축"
             android:padding="10dp"
-            android:background="@drawable/edittext">
-        </EditText>
+            android:textSize="15dp"></EditText>
     </LinearLayout>
 
     <ImageView
@@ -83,17 +80,81 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-        <TextView
-            android:layout_width="230dp"
+
+        <Button
+            android:layout_width="260dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
-            android:layout_marginTop="45dp"
-            android:text="나의 용돈 생활"
-            android:gravity="center"
-            android:textSize="22dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/textvew"
             android:fontFamily="@font/bmhanna"
-            android:background="@drawable/textvew">
-        </TextView>
+            android:gravity="center"
+            android:text="나의 용돈 생활"
+            android:textAlignment="center"
+            android:textSize="22dp"></Button>
+
+        <LinearLayout
+            android:layout_width="323dp"
+            android:layout_height="225dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="260dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black">
+            </View>
+            <Button
+                android:id="@+id/get"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/textview"
+                android:fontFamily="@font/app_font"
+                android:gravity="center_vertical"
+                android:text="  총 수입"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-4.5dp"
+                android:background="@drawable/textview"
+                android:fontFamily="@font/app_font"
+                android:gravity="center_vertical"
+                android:text="  총 지출"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/my"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-4.5dp"
+                android:background="@drawable/textview"
+                android:fontFamily="@font/app_font"
+                android:gravity="center_vertical"
+                android:text="  저축 금액"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/now"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-4.5dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/app_font"
+                android:gravity="center_vertical"
+                android:text="  현재 잔액"
+                android:textSize="17dp" />
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView3"
