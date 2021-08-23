@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText pocket, save;
     TextView money;
-    Button bt_scan;
+    Button bt_scan, menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         pocket = (EditText)findViewById(R.id.pocket);
         save = (EditText)findViewById(R.id.save);
         bt_scan = (Button)findViewById(R.id.bt_scan);
+        menu = (Button)findViewById(R.id.menu);
         money.bringToFront();
         pocket.bringToFront();
         save.bringToFront();
