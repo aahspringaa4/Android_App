@@ -8,8 +8,10 @@
 
     <ImageView
         android:id="@+id/pink"
-        android:layout_width="500dp"
-        android:layout_height="215dp"
+        android:layout_width="470dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,41 +20,46 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="205dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="60dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintBottom_toBottomOf="@+id/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/pocket"
             android:layout_width="165dp"
             android:layout_height="42dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/edittext"
             android:hint="용돈 추가"
             android:padding="10dp"
             android:textSize="15dp"></EditText>
 
-        <EditText
+        <TextView
             android:id="@+id/money"
             android:layout_width="165dp"
             android:layout_height="42dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="55dp"
             android:background="@drawable/edittext"
-            android:hint="잔액"
+            android:hint="총 잔액"
             android:padding="10dp"
-            android:textSize="15dp"></EditText>
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
 
         <EditText
             android:id="@+id/save"
             android:layout_width="165dp"
             android:layout_height="42dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/edittext"
-            android:hint="저축"
+            android:hint="저축 하기"
             android:padding="10dp"
             android:textSize="15dp"></EditText>
     </LinearLayout>
@@ -61,58 +68,52 @@
         android:id="@+id/imageView"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="215dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/pink"
+        app:layout_constraintTop_toTopOf="@+id/pink"
         app:srcCompat="@drawable/bibar" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="580dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="400dp"
+        android:layout_height="425dp"
+        android:layout_marginBottom="145dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <Button
-            android:layout_width="260dp"
-            android:layout_height="38dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="43dp"
-            android:layout_marginBottom="2dp"
-            android:background="@drawable/textvew"
-            android:fontFamily="@font/bmhanna"
-            android:gravity="center"
-            android:text="나의 용돈 생활"
-            android:textAlignment="center"
-            android:textSize="22dp"></Button>
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="323dp"
-            android:layout_height="225dp"
+            android:layout_height="325dp"
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="260dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="1dp"
+            <Button
+                android:layout_width="270dp"
+                android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/black">
-            </View>
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/textvew"
+                android:fontFamily="@font/bmhanna"
+                android:gravity="center"
+                android:text="나의 용돈 생활"
+                android:textAlignment="center"
+                android:textSize="22dp"></Button>
+
             <Button
                 android:id="@+id/get"
-                android:layout_width="260dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="-5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/textview"
                 android:fontFamily="@font/app_font"
                 android:gravity="center_vertical"
@@ -121,7 +122,7 @@
 
             <Button
                 android:id="@+id/post"
-                android:layout_width="260dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-4.5dp"
@@ -133,7 +134,7 @@
 
             <Button
                 android:id="@+id/my"
-                android:layout_width="260dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-4.5dp"
@@ -145,7 +146,7 @@
 
             <Button
                 android:id="@+id/now"
-                android:layout_width="260dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-4.5dp"
@@ -161,8 +162,7 @@
             android:layout_width="360dp"
             android:layout_height="67dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/fragme"
-            tools:layout_editor_absoluteX="-13dp" />
+            app:srcCompat="@drawable/fragme" />
 
     </LinearLayout>
 
