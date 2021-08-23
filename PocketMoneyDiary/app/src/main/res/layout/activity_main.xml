@@ -192,7 +192,7 @@
             android:layout_alignParentBottom="true">
 
             <Button
-                android:id="@+id/btn_1"
+                android:id="@+id/bt_scan"
                 android:layout_width="51dp"
                 android:layout_height="67dp"
                 android:visibility="invisible"
