@@ -90,8 +90,8 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:layout_width="323dp"
-            android:layout_height="325dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
@@ -162,7 +162,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="360dp"
+        android:layout_width="357dp"
         android:layout_height="67dp"
         android:layout_gravity="center"
         android:layout_marginBottom="-3dp"
@@ -172,12 +172,68 @@
         app:srcCompat="@drawable/fragme" />
 
     <RelativeLayout
-        android:layout_width="360dp"
+        android:layout_width="357dp"
         android:layout_height="67dp"
         android:layout_marginBottom="-3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2">
 
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 1"/>
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 2"/>
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 3"/>
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 3"/>
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 3"/>
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 3"/>
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:visibility="invisible"
+                android:text="메뉴 3"/>
+
+        </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
