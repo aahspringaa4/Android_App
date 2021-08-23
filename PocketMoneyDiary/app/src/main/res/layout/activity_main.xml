@@ -171,4 +171,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fragme" />
 
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="-3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2">
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
