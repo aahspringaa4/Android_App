@@ -93,6 +93,7 @@
             android:layout_width="323dp"
             android:layout_height="325dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
             <Button
@@ -157,13 +158,17 @@
                 android:textSize="17dp" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="360dp"
-            android:layout_height="67dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/fragme" />
-
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="360dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fragme" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
