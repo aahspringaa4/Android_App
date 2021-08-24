@@ -52,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Intent NumberIntent = getIntent();
+        NumberIntent.getIntExtra("money", Integer.parseInt(NumberIntent.toString()));
+        pocket.setText(pocket.getText(Integer.toString((Integer.valueOf(Integer.toString(pocket)) + NumberIntent))));
     }
+
     @Override
     public void onBackPressed(){
         long tempTime = System.currentTimeMillis();
