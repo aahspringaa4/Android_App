@@ -79,10 +79,10 @@
 
         <Button
             android:id="@+id/nowaday"
-            android:layout_width="240dp"
+            android:layout_width="230dp"
             android:layout_height="45dp"
             android:background="@drawable/add"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:text="날짜 입력"
             android:padding="10dp"
             android:textSize="15dp">
