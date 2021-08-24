@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
+        <TextView
             android:id="@+id/pocket"
             android:layout_width="165dp"
             android:layout_height="42dp"
@@ -39,7 +39,7 @@
             android:hint="용돈 추가"
             android:padding="10dp"
             android:textSize="15dp">
-        </EditText>
+        </TextView>
 
         <TextView
             android:id="@+id/money"
