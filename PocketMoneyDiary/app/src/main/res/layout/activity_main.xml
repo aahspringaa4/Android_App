@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/pink"
         android:layout_width="470dp"
-        android:layout_height="231dp"
+        android:layout_height="245dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
             android:layout_width="165dp"
             android:layout_height="42dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="18dp"
             android:background="@drawable/edittext"
             android:hint="용돈 추가"
             android:padding="10dp"
@@ -59,7 +59,7 @@
             android:layout_width="165dp"
             android:layout_height="42dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="18dp"
             android:background="@drawable/edittext"
             android:hint="저축 하기"
             android:padding="10dp"
@@ -80,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="@+id/pink"
-        app:srcCompat="@drawable/bibar" />
+        app:srcCompat="@drawable/pig" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <Button
@@ -110,7 +110,8 @@
                 android:gravity="center"
                 android:text="나의 용돈 생활"
                 android:textAlignment="center"
-                android:textSize="22dp"></Button>
+                android:textSize="22dp">
+            </Button>
 
             <Button
                 android:id="@+id/get"
