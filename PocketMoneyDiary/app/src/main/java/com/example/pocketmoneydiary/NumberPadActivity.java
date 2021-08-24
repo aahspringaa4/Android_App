@@ -2,15 +2,17 @@ package com.example.pocketmoneydiary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class NumberPadActivity extends AppCompatActivity {
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16, commit;
     TextView textView, textView2;
     int num1 = 0;
     int num2 = 0;
@@ -42,6 +44,7 @@ public class NumberPadActivity extends AppCompatActivity {
         btn14 = findViewById(R.id.zero_btn);
         btn15 = findViewById(R.id.plus_btn);
         btn16 = findViewById(R.id.del);
+        commit = findViewById(R.id.commit);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,6 +207,17 @@ public class NumberPadActivity extends AppCompatActivity {
                 checkOper = false;
                 textView.setText(null);
                 textView2.setText(null);
+            }
+        });
+        commit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!textView.getText().toString().equals("")) {
+                    finish();
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "값을 먼저 입력해주세요.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
