@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private final long FINISH_INTERVAL_TIME = 2000;
     private long backPressedTime = 0;
     private static Activity activity;
-    EditText pocket, save;
+    TextView pocket, save;
     TextView money;
     ImageButton bt_scan, menu;
     @Override
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         money = (TextView)findViewById(R.id.money);
-        pocket = (EditText)findViewById(R.id.pocket);
+        pocket = (TextView)findViewById(R.id.pocket);
         save = (EditText)findViewById(R.id.save);
         bt_scan = (ImageButton) findViewById(R.id.bt_scan);
         menu = (ImageButton) findViewById(R.id.menu);
@@ -41,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ScanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        pocket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NumberPadActivity.class);
                 startActivity(intent);
             }
         });
