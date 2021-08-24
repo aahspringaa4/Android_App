@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketMoneyDiary">
-        <activity android:name=".NumberPadActivity"></activity>
+        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".goalActivity" />
+        <activity android:name=".NumberPadActivity" />
         <activity android:name=".ScanActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
