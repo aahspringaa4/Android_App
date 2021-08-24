@@ -10,7 +10,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="35dp"
         android:layout_gravity="center"
         android:hint="금액 입력"
         android:padding="12dp"
@@ -19,50 +19,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="35dp">
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_marginLeft="15dp">
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/number">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_marginLeft="10dp">
-        </Button>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
-        <Button
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="15dp">
-        </Button>
-        <Button
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp">
-        </Button>
-        <Button
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp">
-        </Button>
-        <Button
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
     </LinearLayout>
@@ -73,21 +52,25 @@
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="15dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
     </LinearLayout>
@@ -98,21 +81,54 @@
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="15dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
         <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:background="@drawable/number"
+            android:layout_marginLeft="10dp">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/number"
+            android:layout_marginLeft="15dp">
+        </Button>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/number"
+            android:layout_marginLeft="10dp">
+        </Button>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/number"
+            android:layout_marginLeft="10dp">
+        </Button>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/number"
             android:layout_marginLeft="10dp">
         </Button>
     </LinearLayout>
@@ -120,7 +136,7 @@
     <ImageView
         android:layout_width="331dp"
         android:layout_height="204dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/money"></ImageView>
 </LinearLayout>
