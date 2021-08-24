@@ -23,13 +23,10 @@ import java.util.Calendar;
 public class ScanActivity extends AppCompatActivity {
 
     AlertDialog.Builder builder;
-    String[] colors;
-    private final long FINISH_INTERVAL_TIME = 2000;
-    private long backPressedTime = 0;
     private static TextView year;
     ImageButton back;
     Button nowaday;
-    TextView cate;
+    Button cate;
     String[] cates;
     private static TextView month, day;
 
@@ -43,7 +40,7 @@ public class ScanActivity extends AppCompatActivity {
         month = (TextView) findViewById(R.id.month);
         day = (TextView) findViewById(R.id.day);
         nowaday = (Button)findViewById(R.id.nowaday);
-        cate = (TextView) findViewById(R.id.cate);
+        cate = (Button) findViewById(R.id.cate);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,20 +97,5 @@ public class ScanActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-    }
-    @Override
-    public void onBackPressed(){
-        long tempTime = System.currentTimeMillis();
-        long intervalTime = tempTime - backPressedTime;
-
-        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
-        {
-            finish();
-        }
-        else
-        {
-            backPressedTime = tempTime;
-            Toast.makeText(getApplicationContext(), "한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
-        }
     }
 }
