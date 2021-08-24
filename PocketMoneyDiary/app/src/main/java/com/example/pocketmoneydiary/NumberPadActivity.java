@@ -215,7 +215,7 @@ public class NumberPadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!textView.getText().toString().equals("")) {
                     Intent myIntent = new Intent(NumberPadActivity.this, MainActivity.class);
-                    myIntent.putExtra("money", (Parcelable) textView);
+                    myIntent.putExtra("money", String.valueOf(textView));
                     finish();
                 }
                 else {
