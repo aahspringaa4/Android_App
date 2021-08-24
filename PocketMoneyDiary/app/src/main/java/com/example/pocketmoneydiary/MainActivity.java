@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton bt_scan, menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.SplashTheme);
+        setTheme(R.style.splashTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
