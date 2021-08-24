@@ -209,8 +209,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fragmethree"
-                android:text="메뉴 2"/>
+                android:src="@drawable/fragmethree"/>
             <ImageButton
                 android:id="@+id/btn_3"
                 android:layout_width="52dp"
@@ -219,8 +218,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fragmefour"
-                android:text="메뉴 3"/>
+                android:src="@drawable/fragmefour"/>
             <ImageButton
                 android:id="@+id/btn_4"
                 android:layout_width="52dp"
@@ -229,8 +227,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fragmefive"
-                android:text="메뉴 4"/>
+                android:src="@drawable/fragmefive"/>
             <ImageButton
                 android:id="@+id/btn_5"
                 android:layout_width="52dp"
@@ -239,8 +236,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fragmesiz"
-                android:text="메뉴 5"/>
+                android:src="@drawable/fragmesiz"/>
             <ImageButton
                 android:id="@+id/btn_6"
                 android:layout_width="52dp"
@@ -249,8 +245,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fragmeseven"
-                android:text="메뉴 6"/>
+                android:src="@drawable/fragmeseven"/>
             <ImageButton
                 android:id="@+id/btn_7"
                 android:layout_width="52dp"
@@ -259,8 +254,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/fragmeeight"
-                android:text="메뉴 7"/>
+                android:src="@drawable/fragmeeight"/>
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
