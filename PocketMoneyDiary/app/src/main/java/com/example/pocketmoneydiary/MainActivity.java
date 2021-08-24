@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private long backPressedTime = 0;
     private static Activity activity;
     TextView pocket, save;
+    String st_pocket;
     TextView money;
     ImageButton bt_scan, menu;
     @Override
@@ -54,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         });
         Intent NumberIntent = getIntent();
         NumberIntent.getIntExtra("money", Integer.parseInt(NumberIntent.toString()));
-        pocket.setText(pocket.getText(Integer.toString((Integer.valueOf(Integer.toString(pocket)) + NumberIntent))));
     }
 
     @Override
