@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,47 +12,73 @@
         android:layout_width="603dp"
         android:layout_height="270dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-170dp"
-        app:srcCompat="@drawable/pint"
-        tools:layout_editor_absoluteX="-24dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pint" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:adjustViewBounds="true"
+            android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="4dp"
-            android:layout_gravity="center"
+            android:adjustViewBounds="true"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24">
-        </ImageButton>
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"></ImageButton>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="지출 입력"
-            android:textSize="30dp"
-            android:fontFamily="@font/gmbold"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="13dp"
-            android:layout_marginLeft="10dp">
-        </TextView>
+            android:fontFamily="@font/gmbold"
+            android:text="지출 입력"
+            android:textSize="30dp"></TextView>
 
         <Button
             android:layout_width="75dp"
             android:layout_height="45dp"
-            android:text="도움말"
-            android:textSize="17dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/help"
-            android:backgroundTint="#8CFAA7">
-        </Button>
+            android:backgroundTint="#8CFAA7"
+            android:text="도움말"
+            android:textSize="17dp"></Button>
     </LinearLayout>
-</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="356dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="날짜"
+            android:textSize="25dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/gmbold">
+        </TextView>
+
+        <Spinner
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </Spinner>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
