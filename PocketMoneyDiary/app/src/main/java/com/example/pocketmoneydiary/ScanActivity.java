@@ -2,7 +2,9 @@ package com.example.pocketmoneydiary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,11 +22,15 @@ import java.util.Calendar;
 
 public class ScanActivity extends AppCompatActivity {
 
+    AlertDialog.Builder builder;
+    String[] colors;
     private final long FINISH_INTERVAL_TIME = 2000;
     private long backPressedTime = 0;
     private static TextView year;
     ImageButton back;
     Button nowaday;
+    TextView cate;
+    String[] cates;
     private static TextView month, day;
 
     @Override
@@ -37,6 +43,7 @@ public class ScanActivity extends AppCompatActivity {
         month = (TextView) findViewById(R.id.month);
         day = (TextView) findViewById(R.id.day);
         nowaday = (Button)findViewById(R.id.nowaday);
+        cate = (TextView) findViewById(R.id.cate);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +75,31 @@ public class ScanActivity extends AppCompatActivity {
                 oDialog.show();
             }
         });
+        cate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialog();
+            }
+        });
+    }
+    public void showDialog(){
+        cates = getResources().getStringArray(R.array.cate);
+
+        builder = new AlertDialog.Builder(ScanActivity.this);
+
+        builder.setTitle("카테고리");
+
+        // 다이얼로그에 리스트 담기
+
+        builder.setItems(cates,new DialogInterface.OnClickListener(){
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                cate.setText(cates[which]);
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
     @Override
     public void onBackPressed(){
