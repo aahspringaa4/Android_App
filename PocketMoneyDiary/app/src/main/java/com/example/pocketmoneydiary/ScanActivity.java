@@ -20,6 +20,8 @@ import java.util.Calendar;
 
 public class ScanActivity extends AppCompatActivity {
 
+    private final long FINISH_INTERVAL_TIME = 2000;
+    private long backPressedTime = 0;
     private static TextView year;
     ImageButton back;
     Button nowaday;
@@ -56,7 +58,7 @@ public class ScanActivity extends AppCompatActivity {
                                                   int dayOfMonth) {
                                 ScanActivity.year.setText(String.valueOf(year) + "년");
                                 ScanActivity.month.setText(String.valueOf(monthOfYear + 1)+ "월");
-                                ScanActivity.day.setText(String.valueOf(dayOfMonth)+ "일");
+                                ScanActivity.day.setText(String.valueOf(dayOfMonth )+ "일");
                             }
                         };
 
@@ -66,5 +68,20 @@ public class ScanActivity extends AppCompatActivity {
                 oDialog.show();
             }
         });
+    }
+    @Override
+    public void onBackPressed(){
+        long tempTime = System.currentTimeMillis();
+        long intervalTime = tempTime - backPressedTime;
+
+        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
+        {
+            finish();
+        }
+        else
+        {
+            backPressedTime = tempTime;
+            Toast.makeText(getApplicationContext(), "한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
+        }
     }
 }
