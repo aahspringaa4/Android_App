@@ -162,7 +162,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="357dp"
+        android:layout_width="364dp"
         android:layout_height="67dp"
         android:layout_gravity="center"
         android:layout_marginBottom="-3dp"
@@ -172,7 +172,7 @@
         app:srcCompat="@drawable/fragme" />
 
     <RelativeLayout
-        android:layout_width="357dp"
+        android:layout_width="364dp"
         android:layout_height="67dp"
         android:layout_marginBottom="-3dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -193,7 +193,7 @@
 
             <ImageButton
                 android:id="@+id/bt_scan"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:text="메뉴 1"
@@ -203,7 +203,7 @@
                 android:src="@drawable/fragmetwo"/>
             <ImageButton
                 android:id="@+id/menu"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:adjustViewBounds="true"
@@ -213,7 +213,7 @@
                 android:text="메뉴 2"/>
             <ImageButton
                 android:id="@+id/btn_3"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:adjustViewBounds="true"
@@ -223,7 +223,7 @@
                 android:text="메뉴 3"/>
             <ImageButton
                 android:id="@+id/btn_4"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:adjustViewBounds="true"
@@ -233,7 +233,7 @@
                 android:text="메뉴 4"/>
             <ImageButton
                 android:id="@+id/btn_5"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:adjustViewBounds="true"
@@ -243,7 +243,7 @@
                 android:text="메뉴 5"/>
             <ImageButton
                 android:id="@+id/btn_6"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:adjustViewBounds="true"
@@ -253,7 +253,7 @@
                 android:text="메뉴 6"/>
             <ImageButton
                 android:id="@+id/btn_7"
-                android:layout_width="51dp"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:adjustViewBounds="true"
@@ -261,7 +261,6 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/fragmeeight"
                 android:text="메뉴 7"/>
-
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
