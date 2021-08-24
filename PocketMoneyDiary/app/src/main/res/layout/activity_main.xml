@@ -191,48 +191,76 @@
             android:layout_height="67dp"
             android:layout_alignParentBottom="true">
 
-            <Button
+            <ImageButton
                 android:id="@+id/bt_scan"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
-                android:text="메뉴 1"/>
-            <Button
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="메뉴 1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmetwo"/>
+            <ImageButton
                 android:id="@+id/menu"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmethree"
                 android:text="메뉴 2"/>
-            <Button
+            <ImageButton
                 android:id="@+id/btn_3"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmefour"
                 android:text="메뉴 3"/>
-            <Button
+            <ImageButton
                 android:id="@+id/btn_4"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
-                android:text="메뉴 3"/>
-            <Button
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmefive"
+                android:text="메뉴 4"/>
+            <ImageButton
                 android:id="@+id/btn_5"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
-                android:text="메뉴 3"/>
-            <Button
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmesiz"
+                android:text="메뉴 5"/>
+            <ImageButton
                 android:id="@+id/btn_6"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
-                android:text="메뉴 3"/>
-            <Button
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmeseven"
+                android:text="메뉴 6"/>
+            <ImageButton
                 android:id="@+id/btn_7"
                 android:layout_width="51dp"
-                android:layout_height="67dp"
-                android:visibility="invisible"
-                android:text="메뉴 3"/>
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fragmeeight"
+                android:text="메뉴 7"/>
 
         </LinearLayout>
     </RelativeLayout>
