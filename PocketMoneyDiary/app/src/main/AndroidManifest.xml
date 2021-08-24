@@ -4,13 +4,17 @@
 
     <application
         android:allowBackup="false"
-        android:icon="@drawable/bibar"
+        android:icon="@drawable/pig"
         android:label="용돈생각"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketMoneyDiary">
-        <activity android:name=".ScanActivity"></activity>
-        <activity android:name=".MainActivity">
+        <meta-data
+            android:name="com.google.android.actions"/>
+
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
