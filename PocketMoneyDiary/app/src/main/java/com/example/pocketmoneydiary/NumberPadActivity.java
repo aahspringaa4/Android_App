@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -213,6 +214,8 @@ public class NumberPadActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!textView.getText().toString().equals("")) {
+                    Intent myIntent = new Intent(NumberPadActivity.this, MainActivity.class);
+                    myIntent.putExtra("money", (Parcelable) textView);
                     finish();
                 }
                 else {
