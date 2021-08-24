@@ -38,7 +38,8 @@
             android:background="@drawable/edittext"
             android:hint="용돈 추가"
             android:padding="10dp"
-            android:textSize="15dp"></EditText>
+            android:textSize="15dp">
+        </EditText>
 
         <TextView
             android:id="@+id/money"
@@ -50,7 +51,8 @@
             android:hint="총 잔액"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textSize="15dp"></TextView>
+            android:textSize="15dp">
+        </TextView>
 
         <EditText
             android:id="@+id/save"
@@ -61,7 +63,8 @@
             android:background="@drawable/edittext"
             android:hint="저축 하기"
             android:padding="10dp"
-            android:textSize="15dp"></EditText>
+            android:textSize="15dp">
+        </EditText>
     </LinearLayout>
 
     <ImageView
