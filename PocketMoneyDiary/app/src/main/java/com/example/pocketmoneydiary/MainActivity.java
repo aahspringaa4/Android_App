@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private final long FINISH_INTERVAL_TIME = 2000;
-    private long backPressedTime = 0;
+    private long backPressedTime;
     private static Activity activity;
     TextView pocket, save;
     String st_pocket;
@@ -53,8 +53,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Intent NumberIntent = getIntent();
-        NumberIntent.getIntExtra("money", Integer.parseInt(NumberIntent.toString()));
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(!pocket.getText().toString().equals("")) {
+            pocket.setText(NumberPadActivity.arr);
+        }
+        else {
+            pocket.setText(Integer.parseInt((String) pocket.getText()) + NumberPadActivity.arr);
+        }
     }
 
     @Override
