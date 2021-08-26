@@ -18,6 +18,7 @@ public class NumberPadActivity extends AppCompatActivity {
     int num1 = 0;
     int num2 = 0;
     int result = 0;
+    public static Integer arr = null;
     boolean checkOper = false, plus = false, minus = false, gob = false, nanu = false;
 
     char c;
@@ -214,8 +215,7 @@ public class NumberPadActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!textView.getText().toString().equals("")) {
-                    Intent myIntent = new Intent(NumberPadActivity.this, MainActivity.class);
-                    myIntent.putExtra("money", String.valueOf(textView));
+                    arr = Integer.parseInt(textView.getText().toString());
                     finish();
                 }
                 else {
