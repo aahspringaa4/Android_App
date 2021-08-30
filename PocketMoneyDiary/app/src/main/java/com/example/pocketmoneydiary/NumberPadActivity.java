@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -14,11 +15,10 @@ import android.widget.Toast;
 
 public class NumberPadActivity extends AppCompatActivity {
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16, commit;
-    TextView textView, textView2;
+    public static TextView textView, textView2;
     int num1 = 0;
     int num2 = 0;
     int result = 0;
-    public static Integer arr = null;
     boolean checkOper = false, plus = false, minus = false, gob = false, nanu = false;
 
     char c;
@@ -215,7 +215,9 @@ public class NumberPadActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!textView.getText().toString().equals("")) {
-                    arr = Integer.parseInt(textView.getText().toString());
+                    Intent intent = new Intent(NumberPadActivity.this, MainActivity.class);
+                    intent.putExtra("str", String.valueOf(textView));
+                    Log.d("결과", "성공");
                     finish();
                 }
                 else {
