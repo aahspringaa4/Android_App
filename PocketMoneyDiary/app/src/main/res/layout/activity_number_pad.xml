@@ -202,8 +202,8 @@
             android:layout_height="80dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="20dp"
-            android:text="제출 하기"
-            android:textSize="85px"
+            android:text="용돈 추가하기"
+            android:textSize="65px"
             android:background="@drawable/get">
         </Button>
     </LinearLayout>
