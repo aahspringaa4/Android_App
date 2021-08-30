@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private final long FINISH_INTERVAL_TIME = 2000;
     private long backPressedTime;
     private static Activity activity;
-    TextView pocket, save;
+    TextView pocket, save, tv_get;
     String st_pocket;
     TextView money;
     ImageButton bt_scan, menu;
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         save = (EditText)findViewById(R.id.save);
         bt_scan = (ImageButton) findViewById(R.id.bt_scan);
         menu = (ImageButton) findViewById(R.id.menu);
+        tv_get = (TextView) findViewById(R.id.tv_get);
         money.bringToFront();
         pocket.bringToFront();
         save.bringToFront();
@@ -58,11 +59,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if(!pocket.getText().toString().equals("")) {
-            pocket.setText(NumberPadActivity.arr);
+        if(tv_get.getText().toString().equals("")) {
+            Intent intent = getIntent();
+            String str = intent.getStringExtra("str");
+            tv_get.setText("     " + str);
+            Log.d("결과", "성공1");
         }
         else {
-            pocket.setText(Integer.parseInt((String) pocket.getText()) + NumberPadActivity.arr);
+            Intent intent = getIntent();
+            String str = intent.getStringExtra("str");
+            tv_get.setText("     " + String.valueOf(Integer.parseInt((String) tv_get.getText()) + Integer.parseInt(str)));
         }
     }
 
