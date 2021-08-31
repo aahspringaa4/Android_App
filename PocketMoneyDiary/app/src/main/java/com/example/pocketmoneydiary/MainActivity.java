@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     private final long FINISH_INTERVAL_TIME = 2000;
     private long backPressedTime;
-    private static Activity activity;
     TextView pocket, save, tv_get;
     String st_pocket;
     TextView money;
@@ -59,17 +58,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if(tv_get.getText().toString().equals("")) {
-            Intent intent = getIntent();
-            String str = intent.getStringExtra("str");
-            tv_get.setText("     " + str);
-            Log.d("결과", "성공1");
-        }
-        else {
-            Intent intent = getIntent();
-            String str = intent.getStringExtra("str");
-            tv_get.setText("     " + String.valueOf(Integer.parseInt((String) tv_get.getText()) + Integer.parseInt(str)));
-        }
+//        if(tv_get.getText().toString().equals("")) {
+//            Intent intent = getIntent();
+//            String str = intent.getStringExtra("str");
+//            tv_get.setText("     " + str);
+//            Log.d("결과", "성공1");
+//        }
+//        else {
+//            Intent intent = getIntent();
+//            String str = intent.getStringExtra("str");
+//            tv_get.setText("     " + String.valueOf(Integer.parseInt((String) tv_get.getText()) + Integer.parseInt(str)));
+//        }
     }
 
     @Override
