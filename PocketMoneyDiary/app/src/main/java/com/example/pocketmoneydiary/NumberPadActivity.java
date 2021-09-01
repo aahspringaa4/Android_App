@@ -214,15 +214,15 @@ public class NumberPadActivity extends AppCompatActivity {
         commit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!textView.getText().toString().equals("")) {
-                    Intent intent = new Intent(NumberPadActivity.this, MainActivity.class);
-                    intent.putExtra("str", String.valueOf(textView));
-                    Log.d("결과", "성공");
-                    finish();
-                }
-                else {
-                    Toast.makeText(getApplicationContext(), "값을 먼저 입력해주세요.", Toast.LENGTH_SHORT).show();
-                }
+//                if(!textView.getText().toString().equals("")) {
+//                    Intent intent = new Intent(NumberPadActivity.this, MainActivity.class);
+//                    intent.putExtra("str", String.valueOf(textView));
+//                    Log.d("결과", "성공");
+//                    finish();
+//                }
+//                else {
+//                    Toast.makeText(getApplicationContext(), "값을 먼저 입력해주세요.", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }
