@@ -60,9 +60,7 @@ public class ScanActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             public void onDateSet(DatePicker view, int year, int monthOfYear,
                                                   int dayOfMonth) {
-                                ScanActivity.year.setText(String.valueOf(year) + "년");
-                                ScanActivity.month.setText(String.valueOf(monthOfYear + 1)+ "월");
-                                ScanActivity.day.setText(String.valueOf(dayOfMonth )+ "일");
+                                nowaday.setText(String.valueOf(year) + "년 " + String.valueOf(monthOfYear + 1)+ "월 " + String.valueOf(dayOfMonth )+ "일");
                             }
                         };
 
