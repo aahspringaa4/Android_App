@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     String st_pocket;
     TextView money;
     ImageButton bt_scan, menu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         money = (TextView)findViewById(R.id.money);
         pocket = (TextView)findViewById(R.id.pocket);
-        save = (EditText)findViewById(R.id.save);
+        save = (TextView)findViewById(R.id.save);
         bt_scan = (ImageButton) findViewById(R.id.bt_scan);
         menu = (ImageButton) findViewById(R.id.menu);
         tv_get = (TextView) findViewById(R.id.tv_get);
@@ -50,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NumberPadActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SaveActivity.class);
                 startActivity(intent);
             }
         });
