@@ -26,18 +26,110 @@
         android:layout_width="325dp"
         android:layout_height="300dp"
         android:layout_marginTop="44dp"
+        android:text="A"
+        android:textSize="110sp"
+        android:gravity="center"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/rv"
         app:layout_constraintLeft_toLeftOf="@id/left_line"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rv"-->
+    <!--        android:layout_width="65dp"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:layout_marginTop="44dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        tools:listitem="@layout/sight_item_view"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
         android:id="@+id/rv"
         android:layout_width="65dp"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
+
         android:layout_marginTop="44dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/sight"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="@drawable/choosesight"
+                android:gravity="center"
+                android:text="0.1"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/sight2"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="@drawable/sightdesign"
+                android:gravity="center"
+                android:text="0.15"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/sight3"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="@drawable/sightdesign"
+                android:gravity="center"
+                android:text="0.2"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/sight4"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="@drawable/sightdesign"
+                android:gravity="center"
+                android:text="0.3"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/sight6"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="@drawable/sightdesign"
+                android:gravity="center"
+                android:text="0.4"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/firstline"
