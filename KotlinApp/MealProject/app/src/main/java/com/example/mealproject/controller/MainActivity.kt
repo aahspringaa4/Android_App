@@ -1,9 +1,11 @@
-package com.example.mealproject
+package com.example.mealproject.controller
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.webkit.JavascriptInterface
+import androidx.appcompat.app.AppCompatActivity
+import com.example.mealproject.ApiProvider
+import com.example.mealproject.MealApi
+import com.example.mealproject.model.MealResponse
 import com.example.mealproject.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -29,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun readMeal(data: String){ //여기서부터
         val apiProvider = ApiProvider.getInstance().create(MealApi::class.java)
-        apiProvider.getMeal(data).enqueue(object : Callback<MealResponse>{
+        apiProvider.getMeal(data).enqueue(object : Callback<MealResponse> {
             override fun onResponse(call: Call<MealResponse>, response: Response<MealResponse>) {
                 if(response.isSuccessful){
                     System.out.println(response.body())
