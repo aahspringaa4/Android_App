@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mealproject.ApiProvider
 import com.example.mealproject.MealApi
-import com.example.mealproject.model.MealResponse
+import com.example.mealproject.model.MealDTO
 import com.example.mealproject.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -13,7 +13,7 @@ import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var responseValue : MealResponse
+    lateinit var responseValue : MealDTO
     lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState : Bundle?) {
@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun readMeal(data: String){ //여기서부터
         val apiProvider = ApiProvider.getInstance().create(MealApi::class.java)
-        apiProvider.getMeal(data).enqueue(object : Callback<MealResponse> {
-            override fun onResponse(call: Call<MealResponse>, response: Response<MealResponse>) {
+        apiProvider.getMeal(data).enqueue(object : Callback<MealDTO> {
+            override fun onResponse(call: Call<MealDTO>, response: Response<MealDTO>) {
                 if(response.isSuccessful){
                     System.out.println(response.body())
                     responseValue = response.body()!!
@@ -41,14 +41,14 @@ class MainActivity : AppCompatActivity() {
                 Log.d("test", "5")
             }
 
-            override fun onFailure(call: Call<MealResponse>, t: Throwable) {
+            override fun onFailure(call: Call<MealDTO>, t: Throwable) {
                 println("오류")
 
             }
         })
     } // 여기까지 다시보기
 
-    private fun setMeal(MealResponse: MealResponse) {
+    private fun setMeal(MealResponse: MealDTO) {
 
         Log.d("test", "1")
         var mealView_breakfast = "<아침>\n"
